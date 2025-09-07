@@ -1,0 +1,151 @@
+.row
+{
+	display:flex;
+	flex-direction:row;
+    	justify-content:flex-start;
+}
+
+.column
+{
+	display: flex;
+	flex-direction:column;
+    	justify-content:flex-start;
+    padding:0px;
+    margin:0px;
+}
+
+.centerRow
+{
+	display: flex;
+	flex-direction:row;
+	justify-content:center;
+	background-color:black;
+	color:white;
+	border:solid 1px;
+	border-radius:10px;
+}
+img
+{
+	opacity:0.5;
+}
+
+.centerCol
+{
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+.leftRow
+{
+	display: flex;
+	flex-direction:row;
+	justify-content:flex-start;
+	background-color:black;
+	color:white;
+	/*border:1px solid green;*/
+  width:267px;
+  height:267px;
+}
+
+.centerBox
+{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+}
+
+.nav
+{
+	display: flex;
+	flex-direction:row;
+	justify-content:space-around;
+	align-items:center;
+}
+
+    body
+    {
+        background-color:saddlebrown;
+        color:black;
+
+
+    }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+
+}
+
+
+
+	li {float:left;
+
+	}
+    li a
+    {
+        display:flex;
+	flex-direction:row;
+	justify-content:center;
+        background-color:blue;
+        color:white;
+        width:100px;
+        height:20px;
+        padding:20px;
+    }
+
+	a {text-decoration:none;}
+
+    li:hover
+    {
+        background-color:green;
+        color:black;
+    }
+	a:hover
+	{
+		background-color:orange;
+		color:black;
+	}
+
+a { color:white;
+	}
+
+button { background-color:green; color:white;
+	 height:3em;
+  width:76px;
+  border-radius:5px;
+ -webkit-user-select: none; /* Safari, Chrome, Opera */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* Internet Explorer/Edge */
+  user-select: none;         /* Standard syntax */
+
+margin-bottom:0px;}
+
+.labelText { padding-left:5px;}
+
+.answer {
+	display:flex;
+	flex-direction:row;
+    	justify-content:flex-start;
+	align-items:center;
+	height:41px;
+				}
+
+textarea {
+	resize:none; }
+
+.solution
+{
+	margin:10px;
+}
+
+.mainContent
+{
+	background-color:green;
+	border:1px solid silver;
+
+}
+
