@@ -55,9 +55,9 @@ function twoAnswer()
 		for (let j=2; j<count+1; j++)
 		{
 			let key="";
-			if (j%3==0)
+			if (j%3===0)
 				{ key="Fizz";
-					if (j%5==0)
+					if (j%5===0)
 					{
 						key+="Buzz";
 					}
@@ -65,7 +65,7 @@ function twoAnswer()
 					continue;
 				}
 
-			if (j%5==0) {key="Buzz"; result[j]=key; continue; }
+			if (j%5===0) {key="Buzz"; result[j]=key; continue; }
 
 			key=""+j;
 			result[j]=key;
