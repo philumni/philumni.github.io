@@ -8,6 +8,7 @@ let textB=get("textB");
 
 let answer=get("oneAnswer");
 answer.value=getCommonSt(textA.value,textB.value);
+console.log(textA.value + " " + textB.value);
 }
 
 
@@ -21,17 +22,21 @@ function get(s)
 function getCommonSt(textA,textB)
 {
 	let common="";
+
+  // Turn the second string into a char array, this is so we can splice it.
+  textB=textB.split(""); // is now a char array.
+
 	for (let x=0; x<textA.length;x++)
 	{
 		let test = textA.charAt(x);
 
 		let i = textB.indexOf(test);
-		if (i !=-1)
+		if (i !==-1)
 
 			{
 				common+=test;
-				textB.split("").splice(i,1);
-			}
+        textB.splice(i,1);
+   		}
 	}
 
 return common;

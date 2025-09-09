@@ -17,7 +17,7 @@ myApp.innerPalindrome = function(leftIndex,rightIndex,s)
 	if (leftIndex===rightIndex) return true;
 	if (leftIndex>rightIndex && rightIndex<leftIndex) return true;
 
-	if (s.charAt(leftIndex)!=s.charAt(rightIndex)) return false;
+	if (s.charAt(leftIndex)!==s.charAt(rightIndex)) return false;
 
 	leftIndex++;
 	rightIndex--;
