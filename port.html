@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 
 
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" xmlns="http://www.w3.org/1999/html">
 <head>
 	<link rel="stylesheet" href="css/style.css">
 
@@ -15,10 +14,10 @@
 <header class="centerRow">
  	 <div class="nav" style="width:60%">
  	 	<ul>
-			<li><a href="#Soap">French</a></li>
- 	<li><a href="#Cars">Corn</a></li>
- <li><a href="#Bikes">Karaoke</a></li>
- <li><a href="#Tobacco">Michigan</a></li>
+		<li><a href="#Soap">French</a></li>
+ 	  <li><a href="#Cars">Corn</a></li>
+    <li><a href="#Bikes">Karaoke</a></li>
+    <li><a href="#Tobacco">Michigan</a></li>
 		</ul>
 </div>
 
@@ -32,7 +31,7 @@
 </div>
 
 <div class="centerRow">
-		Hi, my name is Phil. I have a bachelor's in computer science and 6 years of experience as a developer.
+		Hi, my name is Phil.
 </div>
 
 
@@ -49,229 +48,90 @@
 <!-- start first problem set -->
 <div class="centerRow">
 
-<div class="leftRow" id="one">
-<div class="column solution">
-
-<div class="row">Find the common characters in two strings.</div>
-<div class="row" style="height:1em;"></div>
-
-<div class="row"> <!-- balance row -->
-<div class="column" class="mainContent"> <!-- main content -->
-<div class="row labelText"><label for="textA">Text A:</label></div>
-<div class="row"><textarea id="textA">afswafhywhfnzbeu</textarea></div>
-<div class="row" style="height:1em;"></div>
-
-<div class="row labelText"><label for="textB">Text B:</label></div>
-<div class="row"><textarea id="textB">zxvnbnvckiiopybeu</textarea></div>
-<div class="row" style="height:1em;"></div>
-
-<div class="row labelText"><label for="answer">Answer:</label></div>
-<div class="row"><textarea id="cAnswer" ></textarea></div>
-</div> <!-- end main content -->
-
-	<div class="column" style="justify-content:flex-end;">
-	<button onclick="cAnswer();">Get Answer</button></div>
-
-</div> <!-- end column solution -->
-</div> <!-- end balance row -->
-</div> <!-- end left row -->
 
 
+<div class="leftRow">
+  <div class="oneBox">
+  <div>Find the common characters</div>
+  <div></div>
+  <div>Text A:</div>
+  <div><textarea id="textA"></textarea></div>
+  <div></div>
+  <div>TextB:</div>
+  <div><textarea id="textB"></textarea></div>
+  <div></div>
+  <div>Answer:</div>
+  <div><textarea id="oneAnswer"></textarea></div>
+  <div><button onclick="oneAnswer();">Get Answer</button></div>
+
+  </div> <!-- end one box -->
+  </div> <!-- end left row -->
 
 
-
-
-<div class="leftRow" id="two">
-<div class="column solution" style="justify-content:space-between;">
-
-
-<div class="column">
-<div class="row">Do any number of FizzBuzz.</div>
-<div class="row" style="height:1em;"></div>
-<div class="row labelText"><label for="fCount">FizzBuzz count:</label></div>
-<div class="row"><input type="number" id="fCount" min=10 max=300 value="300"></input></div>
-</div>
-
-<div class="column">
-<div class="row" style="height:1em;"></div>
-<div class="row labelText"><label for="answer">Answer:</label></div>
-
-<div class="row"><textarea id="fAnswer" ></textarea >
-<div class="column" style="justify-content:flex-end;">
-<button style="float:down;"  onclick="fAnswer();">Get Answer</button></div>
-</div>
-</div>
-
-</div> <!-- end column solution -->
-</div> <!-- end left row -->
-
-
-
-
-<div class="leftRow" id="one">
-<div class="column solution" style="justify-content:space-between;">
-
-
-<div class="column">
-<div class="row">Palindrome test.</div>
-<div class="row" style="height:1em;"></div>
-</div> <!-- end top column -->
-
-<div class="column">
-<div class="row labelText"><label for="textA">Word:</label></div>
-<div class="row"><textarea id="pWord">amanaplanacanalpanama</textarea></div>
-<div class="row" style="height:1em;"></div>
-
-<div class="row labelText"><label for="pAnswer">Answer:</label></div>
-<div class="row"><textarea id="pAnswer" ></textarea>
-
-	<button style="float:down;"  onclick="myApp.doPalindrome();">Get Answer</button></div>
-
-</div> <!-- end bottom column -->
-</div> <!-- end column solution -->
-</div> <!-- end left row -->
-
+  <div class="leftRow">
+    <div class="twoBox">
+      <div>Do any number of FizzBuzz.</div>
+      <div></div>
+      <div>FizzBuzz count:</div>
+      <div><input type="number" id="fCount" min=10 max=300 value="300"></div>
+      <div></div>
+      <div>Answer:</div>
+      <div><textarea id="twoAnswer"></textarea></div>
+      <div><button onclick="twoAnswer()">Get Answer</button></div>
+    </div> <!-- end twoBox -->
+    </div> <!-- end left row -->
 
 
 </div> <!-- end center row -->
-
-
 
 
 
 <div class="centerRow">
 
+<div class="leftRow" id="one">
+  <div class="threeBox">
+    <div>Palindrome test.</div>
+    <div></div>
+    <div>Word:</div>
+    <div><textarea id="pWord">amanaplanacanalpanama</textarea></div>
+    <div></div>
+    <div>Answer:</div>
+    <div><textarea id="threeAnswer"></textarea></div>
+    <div><button onclick="myApp.threeAnswer();">Get Answer</button></div>
+
+  </div> <!-- end three box -->
+</div> <!-- end left row -->
 
   <div class="leftRow" id="one">
-    <div class="column solution" style="justify-content:space-between;">
+    <div class="threeBox">
+      <div>Palindrome test.</div>
+      <div></div>
+      <div>Word:</div>
+      <div><textarea id="pWord">amanaplanacanalpanama</textarea></div>
+      <div></div>
+      <div>Answer:</div>
+      <div><textarea id="threeAnswer"></textarea></div>
+      <div><button onclick="myApp.threeAnswer();">Get Answer</button></div>
 
-
-      <div class="column">
-        <div class="row">Palindrome test.</div>
-        <div class="row" style="height:1em;"></div>
-      </div> <!-- end top column -->
-
-      <div class="column">
-        <div class="row labelText"><label for="textA">Word:</label></div>
-        <div class="row"><textarea id="pWord">amanaplanacanalpanama</textarea></div>
-        <div class="row" style="height:1em;"></div>
-
-        <div class="row labelText"><label for="pAnswer">Answer:</label></div>
-        <div class="row"><textarea id="pAnswer" ></textarea>
-
-          <button style="float:down;"  onclick="myApp.doPalindrome();">Get Answer</button></div>
-
-      </div> <!-- end bottom column -->
-    </div> <!-- end column solution -->
+    </div> <!-- end three box -->
   </div> <!-- end left row -->
-
-
 
   <div class="leftRow" id="one">
-    <div class="column solution" style="justify-content:space-between;">
+    <div class="threeBox">
+      <div>Palindrome test.</div>
+      <div></div>
+      <div>Word:</div>
+      <div><textarea id="pWord">amanaplanacanalpanama</textarea></div>
+      <div></div>
+      <div>Answer:</div>
+      <div><textarea id="threeAnswer"></textarea></div>
+      <div><button onclick="myApp.threeAnswer();">Get Answer</button></div>
 
-
-      <div class="column">
-        <div class="row">Palindrome test.</div>
-        <div class="row" style="height:1em;"></div>
-      </div> <!-- end top column -->
-
-      <div class="column">
-        <div class="row labelText"><label for="textA">Word:</label></div>
-        <div class="row"><textarea id="pWord">amanaplanacanalpanama</textarea></div>
-        <div class="row" style="height:1em;"></div>
-
-        <div class="row labelText"><label for="pAnswer">Answer:</label></div>
-        <div class="row"><textarea id="pAnswer" ></textarea>
-
-          <button style="float:down;"  onclick="myApp.doPalindrome();">Get Answer</button></div>
-
-      </div> <!-- end bottom column -->
-    </div> <!-- end column solution -->
+    </div> <!-- end three box -->
   </div> <!-- end left row -->
-
-
-
-  <div class="leftRow" id="one">
-    <div class="column solution" style="justify-content:space-between;">
-
-
-      <div class="column">
-        <div class="row">Palindrome test.</div>
-        <div class="row" style="height:1em;"></div>
-      </div> <!-- end top column -->
-
-      <div class="column">
-        <div class="row labelText"><label for="textA">Word:</label></div>
-        <div class="row"><textarea id="pWord">amanaplanacanalpanama</textarea></div>
-        <div class="row" style="height:1em;"></div>
-
-        <div class="row labelText"><label for="pAnswer">Answer:</label></div>
-        <div class="row"><textarea id="pAnswer" ></textarea>
-
-          <button style="float:down;"  onclick="myApp.doPalindrome();">Get Answer</button></div>
-
-      </div> <!-- end bottom column -->
-    </div> <!-- end column solution -->
-  </div> <!-- end left row -->
-
-
 
 </div> <!-- end center row -->
 
-<div class="centerRow">
-
-  <div class="leftRow" id="one">
-    <div class="column solution" style="justify-content:space-between;">
-
-
-      <div class="column">
-        <div class="row">Palindrome test.</div>
-        <div class="row" style="height:1em;"></div>
-      </div> <!-- end top column -->
-
-      <div class="column">
-        <div class="row labelText"><label for="textA">Word:</label></div>
-        <div class="row"><textarea id="pWord">amanaplanacanalpanama</textarea></div>
-        <div class="row" style="height:1em;"></div>
-
-        <div class="row labelText"><label for="pAnswer">Answer:</label></div>
-        <div class="row"><textarea id="pAnswer" ></textarea>
-
-          <button style="float:down;"  onclick="myApp.doPalindrome();">Get Answer</button></div>
-
-      </div> <!-- end bottom column -->
-    </div> <!-- end column solution -->
-  </div> <!-- end left row -->
-
-
-  <div class="leftRow" id="one">
-    <div class="column solution" style="justify-content:space-between;">
-
-
-      <div class="column">
-        <div class="row">Palindrome test.</div>
-        <div class="row" style="height:1em;"></div>
-      </div> <!-- end top column -->
-
-      <div class="column">
-        <div class="row labelText"><label for="textA">Word:</label></div>
-        <div class="row"><textarea id="pWord">amanaplanacanalpanama</textarea></div>
-        <div class="row" style="height:1em;"></div>
-
-        <div class="row labelText"><label for="pAnswer">Answer:</label></div>
-        <div class="row"><textarea id="pAnswer" ></textarea>
-
-          <button style="float:down;"  onclick="myApp.doPalindrome();">Get Answer</button></div>
-
-      </div> <!-- end bottom column -->
-    </div> <!-- end column solution -->
-  </div> <!-- end left row -->
-
-
-
-
-</div> <!-- end center row -->
 <div class="centerRow">
 		Your text here.
 </div>

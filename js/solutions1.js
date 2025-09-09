@@ -29,10 +29,10 @@ myApp.innerPalindrome = function(leftIndex,rightIndex,s)
 	return myApp.innerPalindrome(leftIndex,rightIndex,s);
 }
 
-myApp.doPalindrome = function()
+myApp.threeAnswer = function()
 {
 	let word=get("pWord");
-	let answer=get("pAnswer");
+	let answer=get("threeAnswer");
 
 	if (myApp.isPalindrome(word.value.toLowerCase()) )
 	{

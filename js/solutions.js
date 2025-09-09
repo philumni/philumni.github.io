@@ -1,12 +1,12 @@
 var myApp = myApp || {};
 
-function cAnswer()
+function oneAnswer()
 {
 
 let textA=get("textA");
 let textB=get("textB");
 
-let answer=get("cAnswer");
+let answer=get("oneAnswer");
 answer.value=getCommonSt(textA.value,textB.value);
 }
 
@@ -38,7 +38,7 @@ return common;
 }
 
 
-function fAnswer()
+function twoAnswer()
 {
 	let count =parseInt(get("fCount").value,10);
 
@@ -66,6 +66,6 @@ function fAnswer()
 			result[j]=key;
 		}
 
-	let answer=get("fAnswer");
+	let answer=get("twoAnswer");
 	answer.value=result;
 }
