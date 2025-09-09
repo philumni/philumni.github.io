@@ -1,4 +1,4 @@
-var myApp = myApp || {};
+myApp = myApp || {};
 
 function oneAnswer()
 {

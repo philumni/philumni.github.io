@@ -1,4 +1,4 @@
-var myApp = myApp || {};
+myApp = myApp || {};
 
 
 
@@ -31,7 +31,7 @@ myApp.threeAnswer = function()
 
 	if (myApp.isPalindrome(word.value.toLowerCase()) )
 	{
-		answer.value="Yep, it's a apalindrome.";
+		answer.value="Yep, it's a a palindrome.";
 	}
 	else answer.value="No, it's not a palindrome.";
 	console.log("tested " + word.value);
