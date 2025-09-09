@@ -1,4 +1,4 @@
-myApp = myApp || {};
+var myApp = myApp || {};
 
 
 
