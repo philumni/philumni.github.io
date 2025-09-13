@@ -26,8 +26,8 @@ myApp.innerPalindrome = function(leftIndex,rightIndex,s)
 
 myApp.threeAnswer = function()
 {
-	let word=get("pWord");
-	let answer=get("threeAnswer");
+	let word=myApp.get("pWord");
+	let answer=myApp.get("threeAnswer");
 
 	if (myApp.isPalindrome(word.value.toLowerCase()) )
 	{
@@ -37,3 +37,15 @@ myApp.threeAnswer = function()
 	console.log("tested " + word.value);
 }
 
+myApp.fourAnswer = function()
+{
+  let theBase = myApp.get("base");
+  let theHeight = myApp.get("ht");
+  let baseValue = parseFloat(theBase.value);
+  let htValue = parseFloat(theHeight.value);
+
+  let fourAnswer = myApp.get("fourAnswer");
+  let theAnswer= 0.5 * baseValue * htValue;
+  theAnswer = theAnswer.toFixed(2);
+  fourAnswer.value = theAnswer;
+}

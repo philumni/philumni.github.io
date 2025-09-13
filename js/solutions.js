@@ -1,25 +1,23 @@
 var myApp = myApp || {};
 
-function oneAnswer()
+myApp.oneAnswer=function()
 {
 
-let textA=get("textA");
-let textB=get("textB");
+let textA=myApp.get("textA");
+let textB=myApp.get("textB");
 
-let answer=get("oneAnswer");
-answer.value=getCommonSt(textA.value,textB.value);
+let answer=myApp.get("oneAnswer");
+answer.value=myApp.getCommonSt(textA.value,textB.value);
 console.log(textA.value + " " + textB.value);
 }
 
 
-
-
-function get(s)
+myApp.get=function(s)
 {
 	return document.getElementById(s);
 }
 
-function getCommonSt(textA,textB)
+myApp.getCommonSt = function(textA,textB)
 {
 	let common="";
 
@@ -43,16 +41,13 @@ return common;
 }
 
 
-function twoAnswer()
+myApp.twoAnswer=function()
 {
-	let count =parseInt(get("fCount").value,10);
+	let count =parseInt(myApp.get("fCount").value,10);
 
 	let result=[];
-		// 0 is n/a. 1 is n/a.
-		result[0]="0";
-		result[1]="1";
 
-		for (let j=2; j<count+1; j++)
+		for (let j=0; j<count+1; j++)
 		{
 			let key="";
 			if (j%3===0)
@@ -71,6 +66,6 @@ function twoAnswer()
 			result[j]=key;
 		}
 
-	let answer=get("twoAnswer");
+	let answer=myApp.get("twoAnswer");
 	answer.value=result;
 }
