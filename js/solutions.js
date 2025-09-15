@@ -8,7 +8,6 @@ let textB=myApp.get("textB");
 
 let answer=myApp.get("oneAnswer");
 answer.value=myApp.getCommonSt(textA.value,textB.value);
-console.log(textA.value + " " + textB.value);
 }
 
 

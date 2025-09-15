@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" xmlns="http://www.w3.org/1999/html">
+<head>
+  <title>Phil's Portfolio</title>
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="./js/solutions.js"></script>
+	<script src="./js/solutions1.js"></script>
+  <script src="./js/solutions2.js"></script>
+</head>
+
+<body>
+
+<header class="header">
+  <ul>
+    <li><a href="index.html">About</a></li>
+    <li><a href="exercises.html" class="selected">Excercises</a></li>
+    <li><a href="blocks.html">Blocks</a></li>
+    <li><a href="projects.html">Projects</a></li>
+  </ul>
+</header>
+
+	<div class="centerRow">
+		<h1>Sample exercises</h1>
+</div>
+
+<!-- start first problem set -->
+<div class="centerRow">
+
+
+
+<div class="leftRow">
+  <div class="oneBox">
+  <div><h3>Find the common characters.</h3></div>
+  <div></div>
+  <div>Text A:</div>
+  <div><textarea id="textA">charles</textarea></div>
+  <div></div>
+  <div>TextB:</div>
+  <div><textarea id="textB">in charge</textarea></div>
+  <div></div>
+  <div>Answer:</div>
+  <div><textarea id="oneAnswer"></textarea></div>
+  <div><button onclick="myApp.oneAnswer();">Get Answer</button></div>
+
+  </div> <!-- end one box -->
+  </div> <!-- end left row -->
+
+
+  <div class="leftRow">
+    <div class="twoBox">
+      <div><h3>Do any number of FizzBuzz.</h3></div>
+      <div></div>
+      <div>FizzBuzz count:</div>
+      <div><input type="number" id="fCount" min=10 max=300 value="300"></div>
+      <div></div>
+      <div>Answer:</div>
+      <div><textarea id="twoAnswer"></textarea></div>
+      <div><button onclick="myApp.twoAnswer()">Get Answer</button></div>
+    </div> <!-- end twoBox -->
+    </div> <!-- end left row -->
+
+
+</div> <!-- end center row -->
+
+
+
+<div class="centerRow">
+
+<div class="leftRow">
+  <div class="threeBox">
+    <div><h3>Palindrome test.</h3></div>
+    <div></div>
+    <div>Word:</div>
+    <div><textarea id="pWord">amanaplanacanalpanama</textarea></div>
+    <div></div>
+    <div>Answer:</div>
+    <div><textarea id="threeAnswer"></textarea></div>
+    <div><button onclick="myApp.threeAnswer();">Get Answer</button></div>
+
+  </div> <!-- end three box -->
+</div> <!-- end left row -->
+
+  <div class="leftRow ">
+    <div class="fourBox">
+      <div><h3>Area of a triangle.</h3></div>
+      <div></div>
+      <div>Base:</div>
+      <div><input type="number" id="base" value="50.00"></div>
+      <div></div>
+      <div>Height:</div>
+      <div></div>
+      <div><input type="number" id="ht" value="10.00"></div>
+      <div>Answer:</div>
+      <div><textarea id="fourAnswer"></textarea></div>
+      <div><button onclick="myApp.fourAnswer();">Get Answer</button></div>
+
+    </div> <!-- end four box -->
+  </div> <!-- end left row -->
+
+  <div class="leftRow ">
+    <div class="fiveBox">
+      <div><h3>Area of a circle.</h3></div>
+      <div></div>
+      <div>Radius:</div>
+      <div><input type="number" id="radius" value="30.00"></div>
+      <div></div>
+      <div>Answer:</div>
+      <div><textarea id="fiveAnswer"></textarea></div>
+      <div><button onclick="myApp.fiveAnswer();">Get Answer</button></div>
+
+    </div> <!-- end four box -->
+  </div> <!-- end left row -->
+</div> <!-- end center row -->
+
+<div class="centerRow">
+
+
+
+<div class="leftRow ">
+  <div class="sixBox">
+    <div><h3>Simple interest.</h3></div>
+    <div></div>
+    <div>Principal:</div>
+    <div></div>
+    <div><input type="number" id="sPrincipal" value="500.00"></div>
+    <div></div>
+    <div>Rate in percent:</div>
+    <div></div>
+    <div><input type="number" id="sRate" value="5"></div>
+    <div></div>
+    <div>Years:</div>
+    <div></div>
+    <div><input type="number" id="sYears" value="2"></div>
+    <div></div>
+    <div>Answer:</div>
+    <div><textarea id="sixAnswer"></textarea></div>
+    <div><button onclick="myApp.sixAnswer();">Get Answer</button></div>
+
+  </div> <!-- end six box -->
+</div> <!-- end left row -->
+
+  <div class="leftRow ">
+    <div class="sevenBox">
+      <div><h3>Compound interest.</h3></div>
+      <div></div>
+      <div>Principal:</div>
+      <div></div>
+      <div><input type="number" id="cPrincipal" value="500.00"></div>
+      <div></div>
+      <div>Rate in percent:</div>
+      <div></div>
+      <div><input type="number" id="cRate" value="5"></div>
+      <div></div>
+      <div>Years:</div>
+      <div></div>
+      <div><input type="number" id="cYears" value="2"></div>
+      <div></div>
+      <div>Compounding periods:</div>
+      <div></div>
+      <div><input type="number" id="cPeriods" value="12"></div>
+      <div></div>
+      <div>Answer:</div>
+      <div><textarea id="sevenAnswer"></textarea></div>
+      <div><button onclick="myApp.sevenAnswer();">Get Answer</button></div>
+
+    </div> <!-- end six box -->
+  </div> <!-- end left row -->
+
+  <div class="leftRow">
+    <div class="eightBox">
+      <div><h3>Celsius to Fahreinheit.</h3></div>
+      <div></div>
+      <div>Celsius:</div>
+      <div><input type="number" id="celsius" value="23.00"></div>
+      <div></div>
+      <div>Answer:</div>
+      <div><textarea id="eightAnswer"></textarea></div>
+      <div><button onclick="myApp.eightAnswer();">Get Answer</button></div>
+
+    </div> <!-- end four box -->
+  </div> <!-- end left row -->
+</div> <!-- end center row -->
+
+
+</body></html>
