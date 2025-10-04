@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>
+Blocks</title>
+
+<!--
+© Copyright 2018 Phillip Walters, All Rights Reserved.
+HTML, CSS, and Javascript programmed by Phillip Walters.
+-->
+
+
+<meta charset="utf-8">
+<link rel="stylesheet" href="./blocks.css">
+
+
+<style>
+
+.row
+{
+display:flex;
+flex-direction:row;
+    justify-content:flex-start;
+}
+
+.column
+{color:black;
+display: flex;
+flex-direction:column;
+    justify-content:flex-start;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="row">
+
+<div class="column" style="margin-right:20px;">
+<div>
+<table id="typeBoard1">
+<caption>Tetrad preview</caption>
+<tr> <td class="tStyle1"></td> <td class="tStyle8"></td> <td class="tStyle8"></td> <td class="tStyle8"></td> </tr>
+<tr> <td class="tStyle1"></td> <td class="tStyle1"></td> <td class="tStyle8"></td> <td class="tStyle8"></td> </tr>
+<tr> <td class="tStyle8"></td> <td class="tStyle1"></td> <td class="tStyle8"></td> <td class="tStyle8"></td> </tr>
+<tr> <td class="tStyle8"></td> <td class="tStyle8"></td> <td class="tStyle8"></td> <td class="tStyle8"></td> </tr>
+</table>
+</div>
+
+<div>
+<table id="typeBoard2">
+<caption>Tetrad preview</caption>
+<tr> <td class="tStyle2"></td> <td class="tStyle8"></td> <td class="tStyle8"></td> <td class="tStyle8"></td> </tr>
+<tr> <td class="tStyle2"></td> <td class="tStyle8"></td> <td class="tStyle8"></td> <td class="tStyle8"></td> </tr>
+<tr> <td class="tStyle2"></td> <td class="tStyle8"></td> <td class="tStyle8"></td> <td class="tStyle8"></td> </tr>
+<tr> <td class="tStyle2"></td> <td class="tStyle8"></td> <td class="tStyle8"></td> <td class="tStyle8"></td> </tr>
+</table>
+</div>
+
+<div>
+<table id="typeBoard3">
+<caption>Tetrad preview</caption>
+<tr> <td class="tStyle8"></td> <td class="tStyle3"></td> <td class="tStyle8"></td> <td class="tStyle8"></td> </tr>
+<tr> <td class="tStyle3"></td> <td class="tStyle3"></td> <td class="tStyle8"></td> <td class="tStyle8"></td> </tr>
+<tr> <td class="tStyle3"></td> <td class="tStyle8"></td> <td class="tStyle8"></td> <td class="tStyle8"></td> </tr>
+<tr> <td class="tStyle8"></td> <td class="tStyle8"></td> <td class="tStyle8"></td> <td class="tStyle8"></td> </tr>
+</table>
+</div>
+
+<div>
+<table id="typeBoard4">
+<caption>Tetrad preview</caption>
+<tr> <td class="tStyle8"></td> <td class="tStyle4"></td> <td class="tStyle8"></td> <td class="tStyle8"></td> </tr>
+<tr> <td class="tStyle4"></td> <td class="tStyle4"></td> <td class="tStyle4"></td> <td class="tStyle8"></td> </tr>
+<tr> <td class="tStyle8"></td> <td class="tStyle8"></td> <td class="tStyle8"></td> <td class="tStyle8"></td> </tr>
+<tr> <td class="tStyle8"></td> <td class="tStyle8"></td> <td class="tStyle8"></td> <td class="tStyle8"></td> </tr>
+</table>
+</div>
+<div>
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+<div class="column"style="margin-right:20px;" >
+<div>
+<table  id="board" onclick="no()" style="border: 1px solid black;box-shadow:5px 5px 5px #888888;">
+<caption id="caption" onclick="startGame(event)">Click here to start Blocks game.</caption>
+</table>
+</div>
+</div>
+
+<div class="column" style="width:20%">"Blocks game" demo, by Phillip Walters.  Controls: Up, Down, Left, Right, Ctrl (cheat), Space (pause).</div>
+
+
+</div>
+
+<span style="border: 1px" ></span>
+
+
+<script src="./blocks.js">
+</script>
+
+</body>
+
+
+</html>
