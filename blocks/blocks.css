@@ -108,4 +108,17 @@ cursor: pointer;
 }
 
 
+.row
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+}
+
+.column {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 
