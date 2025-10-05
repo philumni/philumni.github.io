@@ -118,6 +118,9 @@ a { color:dodgerblue;
     white-space:nowrap;
 	}
 
+i { white-space:nowrap;}
+
+
 
 button { background-color:green; color:white;
 	height:3em;
