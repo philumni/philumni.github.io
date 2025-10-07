@@ -6,13 +6,14 @@
   <meta charset="UTF-8">
   <title>Phil's Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
+    <script src="./js/solutions3.js"></script>
 <body>
 
 <header class="header">
 
   <ul>
     <li><a href="./index.html">About</a></li>
-    <li><a href="./exercises.html">Excercises</a></li>
+    <li><a href="./exercises.html">Exercises</a></li>
     <li><a href="./blogs.html" class="selected">Blogs</a></li>
     <li><a href="./projects.html">Projects</a></li>
   </ul>
@@ -23,7 +24,7 @@
 
 
 
-<div class="centerCol">
+<div class="centerCol container">
     <h3>Test Driven Development</h3>
  <div style="width:40%">... Is not just a software requirement to test your code before it is written.
    You actually discover what you need to code, through the tests that you write.
@@ -31,29 +32,46 @@
 
      </div>
     <p style="width:40%">See also: <i>What is Test Driven Development</i>
-    <a href="https://testdriven.io/test-driven-development" target="_blank" rel="noopener noreferrer">https://testdriven.io/test-driven-development</a></p>
+    <a href="https://testdriven.io/test-driven-development" target="_blank" rel="noopener noreferrer">
+        https://testdriven.io/test-driven-development</a></p>
 
   </div>
 
-<div class="centerCol">
+<div class="centerCol container">
     <h3>NoSQL databases</h3>
 
     <div style="width:40%">
-    Are the evolution of data storage. They allow for free form/flexible form of data structures to be stored using key/value pairs, documents, graphs, and columns.
-    See also <i>SQL vs NoSQL databases</i> <a href="https://circleci.com/blog/sql-vs-nosql-databases/" target="_blank" rel="noopener noreferer">https://circleci.com/blog/sql-vs-nosql-databases/</a>
+    Are the evolution of data storage. They allow for free form/flexible form of data structures to be stored using
+        key/value pairs, documents, graphs, and columns.
+    See also <i>SQL vs NoSQL databases</i> <a href="https://circleci.com/blog/sql-vs-nosql-databases/" target="_blank"
+    rel="noopener noreferer">https://circleci.com/blog/sql-vs-nosql-databases/</a>
         </div>
 </div>
 
+<div class="centerCol container">
+    <div style="width:40%">
 
-<div class="centerRow">
+
+        <div class="centerCol"><h3>REST Weather</h3></div>
+
+        <div class="column">
+            <label for="city">Get the weather in your city.</label>
+            <div><input type="text" id="city" value="Tucson, AZ"></div>
 
 
+
+            <label for="weather">Weather forecast</label>
+            <textarea style="width:100%;height:200px;" id="weather"></textarea>
+            <div class="row">
+                <button onclick="myApp.doWeather();" id="getWeather">Get Weather</button>
+                <button onclick="myApp.clearWeather();">Clear</button>
+            </div>
+        </div>
+
+    </div>
 </div>
 
 
-
-<div class="centerRow">
-</div>
 
 </body>
 

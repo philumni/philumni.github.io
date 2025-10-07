@@ -45,12 +45,17 @@ img
 	justify-content:center;
   align-items: center;
 
-  background-color:black;
-  color:white;
-  border:solid 1px;
-  border-radius:10px;
-  padding-bottom:20px;
 
+
+}
+
+.container
+{
+    background-color:black;
+    color:white;
+    border:solid 1px;
+    border-radius:10px;
+    padding-bottom:20px;
 }
 
 .leftRow
@@ -149,3 +154,8 @@ html {
 }
 
 
+button:active {
+    position: relative;
+    top: 2px; /* Moves text down by 1px */
+    left: 2px; /* Moves text right by 1px */
+}
