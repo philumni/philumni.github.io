@@ -57,7 +57,7 @@ myApp.eightAnswer = function()
   let celsiusValue=parseFloat(theCelsius.value);
 
   let theAnswer = (celsiusValue * 1.8) + 32;
-  theAnswer = theAnswer.toFixed(2);
+  theAnswer = Number(theAnswer.toFixed(2));
 
   let eightAnswer=myApp.get("eightAnswer");
   eightAnswer.value = theAnswer;
