@@ -17,11 +17,13 @@
     flex-direction: row;
     justify-content: center;
     background-color: black;
-    color: white;
+    color: #888;
     border: solid 1px;
-    border-radius: 10px;
     padding-bottom: 20px;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .header {
@@ -39,28 +41,27 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
+    width: 60%;
 }
 
 .container {
     background-color: black;
-    color: white;
-    border: solid 1px;
-    border-radius: 10px;
+    color: #888;
+    border: 1px solid #888;
     padding-bottom: 20px;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .leftRow {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    background-color: black;
-    color: white;
     /*border:1px solid green;*/
     width: 267px;
-    margin-bottom:20px;
-    margin-right:20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
 }
 
 .centerBox {
@@ -79,7 +80,11 @@ img {
 body {
     background-color: saddlebrown;
     color: black;
-
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 ul {
@@ -183,4 +188,19 @@ button:active {
     body {
         font-size: 18px;
     }
+}
+
+sup { font-size: 12px;}
+
+
+h3 {
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+main {
+    flex: 1;
 }

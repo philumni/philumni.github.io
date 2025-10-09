@@ -6,8 +6,12 @@
     <meta charset="UTF-8">
     <title>Phil's Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
     <script src="./js/solutions3.js"></script>
-    <script>window.onload = function() { myApp.doWeather();}</script>
+    <script>window.onload = function () {
+        myApp.weatherLog("Loading weather...");
+        myApp.doWeather();
+    }</script>
 <body>
 
 <header class="header">
@@ -23,7 +27,7 @@
 </header>
 
 <div class="centerCol container">
-    <div style="width:40%">
+    <div style="width:80%">
 
 
         <div class="centerCol"><h3>REST Weather</h3></div>
@@ -36,16 +40,37 @@
             <div style="height:1em;"></div>
             <label for="weather">Weather forecast</label>
             <textarea style="width:100%;height:200px;" id="weather"></textarea>
+
+            <div class="row">
             <div class="row">
                 <button onclick="myApp.doWeather();" id="getWeather">Get Weather</button>
                 <button onclick="myApp.clearWeather();">Clear</button>
             </div>
+            <div style="display:flex;justify-content:flex-end;width:100%;"><sup>Weather provided by the National Weather Service.
+            </sup></div></div>
         </div>
 
     </div>
 </div>
 
-
+<footer>
+    <div class="footer-links">
+        <a href="https://www.java.com/" target="_blank">Java</a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a>
+        <a href="https://nodejs.org/" target="_blank">Node.js</a>
+        <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank">C#</a>
+        <a href="https://dotnet.microsoft.com/" target="_blank">.NET</a>
+        <a href="https://www.microsoft.com/" target="_blank">SQL Server</a>
+        <a href="https://www.atlassian.com/software/jira" target="_blank">Jira</a>
+        <a href="https://spring.io/" target="_blank">Spring</a>
+        <a href="https://spring.io/projects/spring-boot" target="_blank">Spring Boot</a>
+        <a href="https://git-scm.com/" target="_blank">Git</a>
+        <a href="https://github.com/" target="_blank">GitHub</a>
+    </div>
+    <div class="footer-bottom">
+        © 2025 Phillip Walters. Built with inspiration, code, and Webstorm.
+    </div>
+</footer>
 
 </body>
 
