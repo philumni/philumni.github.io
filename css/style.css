@@ -26,6 +26,10 @@
     margin-right: 20%;
 }
 
+.exercisesHeader {
+    padding-bottom: 0;
+}
+
 .header {
     display: flex;
     flex-direction: row;
@@ -54,14 +58,28 @@ img {
     margin-right: 20%;
 }
 
-.leftRow {
+.exercisesTop {
+    border-bottom: 0;
+}
+
+.exercisesMiddle {
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.exercisesBottom {
+    border-top: 0;
+}
+
+
+.questionBox {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    /*border:1px solid green;*/
+    justify-content: left;
     width: 267px;
     margin-bottom: 20px;
     margin-right: 20px;
+    margin-left: 20px;
 }
 
 .centerBox {
@@ -190,7 +208,9 @@ button:active {
     }
 }
 
-sup { font-size: 12px;}
+sup {
+    font-size: 12px;
+}
 
 
 h3 {
