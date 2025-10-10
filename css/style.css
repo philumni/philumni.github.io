@@ -56,7 +56,12 @@ img {
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
-}
+ }
+
+.aboutSection { height:7em;}
+.blogsSection { height:11em;}
+.projectsSection {height:8em;}
+
 
 .exercisesTop {
     border-bottom: 0;
@@ -224,3 +229,4 @@ h1 {
 main {
     flex: 1;
 }
+
