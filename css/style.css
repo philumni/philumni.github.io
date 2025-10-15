@@ -1,3 +1,13 @@
+body {
+    background-color: saddlebrown;
+    color: black;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .row {
     display: flex;
     flex-direction: row;
@@ -56,12 +66,58 @@ img {
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
- }
+}
 
-.aboutSection { height:7em;}
-.blogsSection { height:11em;}
-.projectsSection {height:8em;}
+.contains {
+    display: grid;
+    width: 60%;
+    height: 28rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    align-items: stretch;
+    flex: 1;
+}
 
+.fourGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.threeGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.OneGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.section {
+    background-color: black;
+    color: #888;
+    border: 1px solid #888;
+    padding-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.aboutSection {
+    height: 7em;
+}
+
+.blogsSection {
+    height: 11em;
+}
+
+.projectsSection {
+    height: 8em;
+}
 
 .exercisesTop {
     border-bottom: 0;
@@ -100,16 +156,6 @@ img {
     align-items: center;
 }
 
-body {
-    background-color: saddlebrown;
-    color: black;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -137,10 +183,6 @@ li a {
 
 a {
     text-decoration: none;
-}
-
-
-a {
     color: dodgerblue;
     white-space: nowrap;
 }
@@ -148,7 +190,6 @@ a {
 i {
     white-space: nowrap;
 }
-
 
 button {
     background-color: green;
