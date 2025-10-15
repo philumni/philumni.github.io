@@ -71,12 +71,20 @@ img {
 .contains {
     display: grid;
     width: 60%;
-    height: 28rem;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin:0 auto;
     align-items: stretch;
     flex: 1;
 }
+
+
+@media (max-width: 600px) {
+    .contains {
+        display: grid;
+        width: 80%;
+        margin:0 auto;
+        align-items: stretch;
+        flex: 1;
+    }    }
 
 .fourGrid {
     grid-template-columns: 1fr;
@@ -104,7 +112,6 @@ img {
     justify-content: center;
     align-items: center;
 }
-
 
 .aboutSection {
     height: 7em;
