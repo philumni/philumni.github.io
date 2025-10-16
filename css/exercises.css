@@ -1,0 +1,81 @@
+
+.centerRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+    color: #888;
+    border: solid 1px;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    box-shadow: 10px 10px 10px black;
+    background-image: url('../wood2.avif');
+}
+
+.container {
+    background-color: black;
+    color: #888;
+    border: 1px solid #888;
+    display: grid;
+    width: 60%;
+    margin: 0 auto;
+    align-items: stretch;
+    flex: 1;
+    gap:10px;
+    box-shadow: 10px 10px 10px black;
+    background-image: url('../wood2.avif');
+}
+
+.eightGrid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.questionBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 300px;
+    padding-bottom: 20px;
+    margin: 20px;
+    border: 1px solid silver;
+    padding-left:20px;
+    box-shadow: 5px 5px 5px black;
+    background-color:black;
+
+}
+
+.oneBox { grid-row:1; grid-column:2;}
+.twoBox { grid-row:1; grid-column:4;}
+
+.threeBox { grid-row:2; grid-column:2;}
+.fourBox { grid-row:2; grid-column:4;}
+
+.fiveBox { grid-row:3; grid-column:2;}
+.sixBox { grid-row:3; grid-column:4;}
+
+.sevenBox { grid-row:4; grid-column:2;}
+.eightBox { grid-row:4; grid-column:4;}
+
+
+@media (max-width: 600px) {
+    .eightGrid {
+        grid-template-columns: 20px 1fr 20px; /* one column */
+    }
+
+    .oneBox { grid-row:1; grid-column:2;}
+    .twoBox { grid-row:2; grid-column:2;}
+
+    .threeBox { grid-row:3; grid-column:2;}
+    .fourBox { grid-row:4; grid-column:2;}
+
+    .fiveBox { grid-row:5; grid-column:2;}
+    .sixBox { grid-row:6; grid-column:2;}
+
+    .sevenBox { grid-row:7; grid-column:2;}
+    .eightBox { grid-row:8; grid-column:2;}
+}
+

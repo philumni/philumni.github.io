@@ -6,6 +6,8 @@
     <title>Phil's Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/exercises.css">
+    <link rel="stylesheet" href="css/content.css">
 
     <script src="./js/solutions.js"></script>
     <script src="./js/solutions1.js"></script>
@@ -24,15 +26,16 @@
     </ul>
 </header>
 
-<div class="centerRow exercisesHeader">
+<div class="centerRow">
     <h1>Sample exercises</h1>
 </div>
 
 <!-- start first problem set -->
-<div class="centerRow exercisesTop">
-
-    <div class="questionBox">
-        <div class="oneBox">
+<div class="container eightGrid">
+    
+      
+    <div class="questionBox oneBox">
+        <div>
             <div><h3>Find the common characters.</h3></div>
 
             <label for="textA">Text A:</label>
@@ -47,14 +50,13 @@
                 <button onclick="myApp.oneAnswer();">Get Answer</button>
             </div>
 
+
         </div> <!-- end one box -->
-    </div> <!-- end left row -->
+    </div> <!-- end questionBox -->
 
-
-    <div class="questionBox">
-        <div class="twoBox">
-            <div><h3>Do any number of FizzBuzz.</h3></div>
-
+    <div class="questionBox twoBox">
+        <div>
+            <div><h3>Do any number of FizzBuzz</h3></div>
             <label for="fCount">FizzBuzz count:</label>
             <div><input type="number" id="fCount" min=10 max=300 value="300"></div>
             <div style="height:1em;"></div>
@@ -63,17 +65,13 @@
             <div>
                 <button onclick="myApp.twoAnswer()">Get Answer</button>
             </div>
+
+
         </div> <!-- end twoBox -->
-    </div> <!-- end left row -->
+    </div> <!-- end questionBox -->
 
-
-</div> <!-- end center row -->
-
-
-<div class="centerRow exercisesMiddle">
-
-    <div class="questionBox">
-        <div class="threeBox">
+    <div class="questionBox threeBox">
+        <div>
             <div><h3>Palindrome test.</h3></div>
 
             <label for="pWord">Word:</label>
@@ -86,10 +84,10 @@
             </div>
 
         </div> <!-- end three box -->
-    </div> <!-- end left row -->
+    </div> <!-- end questionBox -->
 
-    <div class="questionBox ">
-        <div class="fourBox">
+    <div class="questionBox fourBox">
+        <div>
             <div><h3>Area of a triangle.</h3></div>
 
             <label for="base">Base:</label>
@@ -105,14 +103,10 @@
             </div>
 
         </div> <!-- end four box -->
-    </div> <!-- end left row -->
+    </div> <!-- end questionBox -->
 
-</div> <!-- end center row -->
-
-<div class="centerRow exercisesMiddle">
-
-    <div class="questionBox ">
-        <div class="fiveBox">
+    <div class="questionBox fiveBox">
+        <div>
             <div><h3>Area of a circle.</h3></div>
             <label for="radius">Radius:</label>
             <div><input type="number" id="radius" value="30.00"></div>
@@ -124,30 +118,26 @@
             </div>
 
         </div> <!-- end five box -->
-    </div> <!-- end left row -->
+    </div> <!-- end questionBox -->
 
-
-    <div class="questionBox ">
-
-        <div class="eightBox">
+    <div class="questionBox sixBox">
+        <div>
             <div><h3>Celsius to Fahreinheit.</h3></div>
 
             <label for="celsius">Celsius:</label>
             <div><input type="number" id="celsius" value="23.00"></div>
             <div style="height:1em;"></div>
-            <label for="eightAnswer">Answer:</label>
-            <div><textarea id="eightAnswer"></textarea></div>
+            <label for="sixAnswer">Answer:</label>
+            <div><textarea id="sixAnswer"></textarea></div>
             <div>
-                <button onclick="myApp.eightAnswer();">Get Answer</button>
+                <button onclick="myApp.sixAnswer();">Get Answer</button>
             </div>
 
-        </div> <!-- end eight box -->
-    </div> <!-- end left row -->
-</div> <!-- end center row -->
+        </div> <!-- end six box -->
+    </div> <!-- end questionBox -->
 
-<div class="centerRow exercisesBottom">
-    <div class="questionBox ">
-        <div class="sixBox">
+    <div class="questionBox sevenBox">
+        <div>
             <div><h3>Simple interest.</h3></div>
 
             <label for="sPrincipal">Principal:</label>
@@ -159,18 +149,18 @@
             <label for="sYears">Years:</label>
             <div><input type="number" id="sYears" value="2"></div>
             <div style="height:1em;"></div>
-            <label for="sixAnswer">Answer:</label>
-            <div><textarea id="sixAnswer"></textarea></div>
+            <label for="sevenAnswer">Answer:</label>
+            <div><textarea id="sevenAnswer"></textarea></div>
             <div>
-                <button onclick="myApp.sixAnswer();">Get Answer</button>
+                <button onclick="myApp.sevenAnswer();">Get Answer</button>
             </div>
 
-        </div> <!-- end six box -->
-    </div> <!-- end left row -->
+        </div> <!-- end seven box -->
+    </div> <!-- end questionBox -->
 
-    <div class="questionBox">
+    <div class="questionBox eightBox">
 
-        <div class="sevenBox">
+        <div>
             <div><h3>Compound interest.</h3></div>
 
             <label for="cPrincipal">Principal:</label>
@@ -185,17 +175,18 @@
             <label for="cPeriods">Compounding periods:</label>
             <div><input type="number" id="cPeriods" value="12"></div>
             <div style="height:1em;"></div>
-            <label for="sevenAnswer">Answer:</label>
-            <div><textarea id="sevenAnswer"></textarea></div>
+            <label for="eightAnswer">Answer:</label>
+            <div><textarea id="eightAnswer"></textarea></div>
             <div>
-                <button onclick="myApp.sevenAnswer();">Get Answer</button>
+                <button onclick="myApp.eightAnswer();">Get Answer</button>
             </div>
 
-        </div> <!-- end seven box -->
+        </div> <!-- end eight box -->
 
 
-    </div> <!-- end left row -->
-</div> <!-- end center row -->
+    </div> <!-- end questionBox -->
+
+</div> <!-- end container -->
 
 <footer>
     <div class="footer-links">

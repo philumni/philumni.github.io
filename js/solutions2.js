@@ -13,7 +13,20 @@ myApp.fiveAnswer = function()
   fiveAnswer.value = theAnswer;
 }
 
-myApp.sixAnswer = function() {
+
+myApp.sixAnswer = function()
+{
+    let theCelsius = myApp.get("celsius");
+    let celsiusValue=parseFloat(theCelsius.value);
+
+    let theAnswer = (celsiusValue * 1.8) + 32;
+    theAnswer = Number(theAnswer.toFixed(2));
+
+    let sixAnswer=myApp.get("sixAnswer");
+    sixAnswer.value = theAnswer;
+}
+
+myApp.sevenAnswer = function() {
 
   let thePrincipal = myApp.get("sPrincipal");
   let theRate = myApp.get("sRate");
@@ -26,11 +39,11 @@ myApp.sixAnswer = function() {
   theAnswer = theAnswer.toFixed(2);
 
 
-  let sixAnswer = myApp.get("sixAnswer");
-  sixAnswer.value = theAnswer;
+  let sevenAnswer = myApp.get("sevenAnswer");
+  sevenAnswer.value = theAnswer;
 }
 
-myApp.sevenAnswer = function() {
+myApp.eightAnswer = function() {
 
   let thePrincipal = myApp.get("cPrincipal");
   let theRate = myApp.get("cRate");
@@ -47,18 +60,8 @@ myApp.sevenAnswer = function() {
   theAnswer = theAnswer.toFixed(2);
 
 
-  let sevenAnswer = myApp.get("sevenAnswer");
-  sevenAnswer.value = theAnswer;
-}
-
-myApp.eightAnswer = function()
-{
-  let theCelsius = myApp.get("celsius");
-  let celsiusValue=parseFloat(theCelsius.value);
-
-  let theAnswer = (celsiusValue * 1.8) + 32;
-  theAnswer = Number(theAnswer.toFixed(2));
-
-  let eightAnswer=myApp.get("eightAnswer");
+  let eightAnswer = myApp.get("eightAnswer");
   eightAnswer.value = theAnswer;
 }
+
+

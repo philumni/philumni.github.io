@@ -22,23 +22,6 @@ body {
     margin: 0;
 }
 
-.centerRow {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: black;
-    color: #888;
-    border: solid 1px;
-    padding-bottom: 20px;
-    flex-wrap: wrap;
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
-.exercisesHeader {
-    padding-bottom: 0;
-}
 
 .header {
     display: flex;
@@ -58,102 +41,6 @@ img {
     width: 60%;
 }
 
-.container {
-    background-color: black;
-    color: #888;
-    border: 1px solid #888;
-    padding-bottom: 20px;
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
-.contains {
-    display: grid;
-    width: 60%;
-    margin:0 auto;
-    align-items: stretch;
-    flex: 1;
-}
-
-
-@media (max-width: 600px) {
-    .contains {
-        display: grid;
-        width: 80%;
-        margin:0 auto;
-        align-items: stretch;
-        flex: 1;
-    }    }
-
-.fourGrid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-}
-
-.threeGrid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
-.OneGrid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-}
-
-.section {
-    background-color: black;
-    color: #888;
-    border: 1px solid #888;
-    padding-bottom: 20px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.aboutSection {
-    height: 7em;
-}
-
-.blogsSection {
-    height: 11em;
-}
-
-.projectsSection {
-    height: 8em;
-}
-
-.exercisesTop {
-    border-bottom: 0;
-}
-
-.exercisesMiddle {
-    border-top: 0;
-    border-bottom: 0;
-}
-
-.exercisesBottom {
-    border-top: 0;
-}
-
-
-.questionBox {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    width: 267px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    margin-left: 70px;
-}
-
-.centerBox {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
 
 .nav {
     display: flex;
@@ -169,6 +56,7 @@ ul {
     overflow: hidden;
     color: white;
     border: solid 1px;
+    box-shadow: 10px 10px 10px black;
 }
 
 
@@ -271,9 +159,9 @@ h3 {
 
 h1 {
     color: white;
+    text-shadow: 0 2px 20px saddlebrown;
 }
 
 main {
     flex: 1;
 }
-
