@@ -20,7 +20,7 @@
     width:60%;
     background-image: url('../wood2.avif');
     box-shadow: 10px 10px 10px black;
-    margin: 0 auto;
+    margin:0 auto;
     border: 1px solid #888;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .eightGrid {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr auto 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
