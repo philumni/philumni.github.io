@@ -39,7 +39,6 @@ body {
     align-items: stretch;
     justify-items: center;
     flex: 1;
-    gap: 10px;
     margin: 0 auto;
     width: 100%;
 }
@@ -55,7 +54,7 @@ body {
     justify-content: left;
     width: 300px;
     padding-bottom: 20px;
-    margin: 20px;
+    margin: 20px auto;
     border: 1px solid silver;
     padding-left: 20px;
     padding-right: 20px;
