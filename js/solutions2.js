@@ -14,6 +14,53 @@ myApp.fiveAnswer = function()
 }
 
 
+myApp.sixAnswer=function()
+{
+    const theN = Number(myApp.get("nPrimes").value);
+
+    let theAnswer=
+        myApp.doSieveOfEratosthenesString(myApp.doSieveOfEratosthenesMain(theN));
+    let sixAnswer=myApp.get("sixAnswer");
+    sixAnswer.value = theAnswer;
+}
+
+
+myApp.doSieveOfEratosthenesString= function(primes)
+{
+    let j = 0;
+
+    let output = "";
+    for (; j < primes.length - 1; j++)
+    {
+        if (primes[j]) output += j + ", ";
+    }
+
+    if (primes[j]) output += "" + j;
+    if (output.endsWith(", ")) output = output.substring(0, output.length - 2);
+    output+= ".";
+    return output;
+}
+
+myApp.doSieveOfEratosthenesMain=function(n)
+{
+    const primes = new Array(n + 1);
+    for (let i = 2; i <= n; i++) primes[i] = true;
+
+    for (let p = 2; p * p <= n; p++)
+    {
+        if (primes[p] === true)
+        {
+            for (let i = p * p; i <= n; i += p)
+            primes[i] = false;
+        }
+    }
+
+    primes[0] = false;
+    primes[1] = false;
+    return primes;
+}
+
+/*
 myApp.sixAnswer = function()
 {
     let theCelsius = myApp.get("celsius");
@@ -25,6 +72,7 @@ myApp.sixAnswer = function()
     let sixAnswer=myApp.get("sixAnswer");
     sixAnswer.value = theAnswer;
 }
+*/
 
 myApp.sevenAnswer = function() {
 
