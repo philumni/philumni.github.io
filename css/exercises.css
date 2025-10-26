@@ -3,10 +3,10 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    text-align:center;
     background-color: black;
     color: #888;
     border: solid 1px;
-    padding-bottom: 20px;
     flex-wrap: wrap;
     width: 60%;
     margin-top:20px;
@@ -17,26 +17,24 @@
 
 .article
 {
-    width:60%;
     background-image: url('../wood2.avif');
     box-shadow: 10px 10px 10px black;
     margin:0 auto;
     border: 1px solid #888;
+    width:60%;
+
 }
 
-@container (max-width: 800px) {
-    .article {
-        width: 90%;
-        background-image: url('../wood2.avif');
-        box-shadow: 10px 10px 10px black;
-        margin: 0 auto;
-        border: 1px solid #888;
-    }
+body
+{
+    container-type: inline-size;
 }
+
+
+
 .container {
     color: #888;
     display: grid;
-    margin: 0 auto;
     align-items: stretch;
     flex: 1;
     gap:10px;
@@ -73,21 +71,25 @@
 .eightBox { grid-row:4; grid-column:4;}
 
 
-@media (max-width: 800px) {
+ @media (max-width: 800px) {
     .eightGrid {
-        grid-template-columns: 20px 1fr 20px; /* one column */
-    }
+        grid-template-columns: 1fr; /* one column */
+        grid-template-rows: repeat(8, 1fr);
+   }
 
-    .oneBox { grid-row:1; grid-column:2;}
-    .twoBox { grid-row:2; grid-column:2;}
+     .container {width:80%;}
+     .article{width:80%;}
 
-    .threeBox { grid-row:3; grid-column:2;}
-    .fourBox { grid-row:4; grid-column:2;}
+    .oneBox { grid-row:1; grid-column:1;}
+    .twoBox { grid-row:2; grid-column:1;}
 
-    .fiveBox { grid-row:5; grid-column:2;}
-    .sixBox { grid-row:6; grid-column:2;}
+    .threeBox { grid-row:3; grid-column:1;}
+    .fourBox { grid-row:4; grid-column:1;}
 
-    .sevenBox { grid-row:7; grid-column:2;}
-    .eightBox { grid-row:8; grid-column:2;}
+    .fiveBox { grid-row:5; grid-column:1;}
+    .sixBox { grid-row:6; grid-column:1;}
+
+    .sevenBox { grid-row:7; grid-column:1;}
+    .eightBox { grid-row:8; grid-column:1;}
 }
 
