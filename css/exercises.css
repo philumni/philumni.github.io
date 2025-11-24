@@ -21,7 +21,6 @@
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
-
     box-shadow: 10px 10px 10px black;
     margin: 0 auto;
     width: 60%;
@@ -49,6 +48,8 @@ body {
 .eightGrid {
     grid-template-columns: 20px 1fr 20px 1fr 20px;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    gap:20px;
 }
 
 .questionBox {
