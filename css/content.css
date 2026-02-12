@@ -29,6 +29,11 @@
         flex: 1;
     }    }
 
+
+.fiveGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
 .fourGrid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
