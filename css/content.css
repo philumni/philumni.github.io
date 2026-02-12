@@ -10,7 +10,12 @@
     margin:0 auto;
     align-items: stretch;
     flex: 1;
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 10px 10px 10px black,
+    -4px -4px 4px rgba(0, 0, 0, 0.18),  /* faint top-left */
+    -4px  0   4px rgba(0, 0, 0, 0.12),  /* faint left */
+    0   -4px 4px rgba(0, 0, 0, 0.12);  /* faint top */
+
+
     text-shadow:0 2px 20px saddlebrown;
 }
 
