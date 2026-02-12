@@ -8,10 +8,10 @@
     color: #888;
     border: solid 1px;
     flex-wrap: wrap;
-    width: 60%;
+    width: 100%;
     margin-top: 20px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: auto;
+    margin-right: auto;
     box-shadow: 5px 5px 5px black;
     margin-bottom:20px;
 }
@@ -23,7 +23,8 @@
     background-position: center;
     box-shadow: 10px 10px 10px black;
     margin: 0 auto;
-    width: 60%;
+    width: 80%;
+    max-width: 1600px;
     padding-left:20px;
     padding-right:20px;
     padding-bottom:20px;
@@ -43,13 +44,14 @@ body {
     justify-items: center;
     flex: 1;
     margin: 0 auto;
-    width: 100%;
+    width: min(100%, 1500px);
     gap:20px;
 }
 
 .eightGrid {
-    grid-template-columns: 20px 1fr 20px 1fr 20px;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(320px, max-content));
+    grid-template-rows: repeat(4, auto);
+    justify-content: center;
 
     gap:20px;
 }
@@ -71,42 +73,42 @@ body {
 
 .oneBox {
     grid-row: 1;
-    grid-column: 2;
+    grid-column: 1;
 }
 
 .twoBox {
     grid-row: 1;
-    grid-column: 4;
+    grid-column: 2;
 }
 
 .threeBox {
     grid-row: 2;
-    grid-column: 2;
+    grid-column: 1;
 }
 
 .fourBox {
     grid-row: 2;
-    grid-column: 4;
+    grid-column: 2;
 }
 
 .fiveBox {
     grid-row: 3;
-    grid-column: 2;
+    grid-column: 1;
 }
 
 .sixBox {
     grid-row: 3;
-    grid-column: 4;
+    grid-column: 2;
 }
 
 .sevenBox {
     grid-row: 4;
-    grid-column: 2;
+    grid-column: 1;
 }
 
 .eightBox {
     grid-row: 4;
-    grid-column: 4;
+    grid-column: 2;
 }
 
 
