@@ -11,9 +11,9 @@
     align-items: stretch;
     flex: 1;
     box-shadow: 10px 10px 10px black,
-    -4px -4px 4px rgba(0, 0, 0, 0.18),  /* faint top-left */
-    -4px  0   4px rgba(0, 0, 0, 0.12),  /* faint left */
-    0   -4px 4px rgba(0, 0, 0, 0.12);  /* faint top */
+    -5px -5px 10px rgba(0, 0, 0, 0.18),  /* faint top-left */
+    -5px  0   10px rgba(0, 0, 0, 0.12),  /* faint left */
+    0   -5px 10px rgba(0, 0, 0, 0.12);  /* faint top */
 
 
     text-shadow:0 2px 20px saddlebrown;
@@ -29,6 +29,12 @@
         flex: 1;
     }    }
 
+
+.sixGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items:stretch;
+}
 
 .fiveGrid {
     grid-template-columns: 1fr;
