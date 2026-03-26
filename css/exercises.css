@@ -25,15 +25,13 @@
     background-size: cover;
     background-position: center;
     box-shadow: 10px 10px 10px black,
-    -4px -4px 4px rgba(0, 0, 0, 0.18),  /* faint top-left */
-    -4px  0   4px rgba(0, 0, 0, 0.12),  /* faint left */
-    0   -4px 4px rgba(0, 0, 0, 0.12); /* faint top */
+    -5px -5px 10px rgba(0, 0, 0, 0.18),  /* faint top-left */
+    -5px  0   10px rgba(0, 0, 0, 0.12),  /* faint left */
+    0   -5px 10px rgba(0, 0, 0, 0.12); /* faint top */
 
     margin: 0 auto;
-    width: 65%;
-    max-width: 1600px;
-    padding-left:20px;
-    padding-right:20px;
+    width: 60%;
+
     padding-bottom:32px;
     padding-top:32px;
     height:100%;
@@ -46,6 +44,8 @@
     justify-items: center;
     flex: 1;
     margin: 0 auto;
+
+
     width: min(100%, 1500px);
     gap:20px;
 }
