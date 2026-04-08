@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Blocks</title>
+  <!--
+    © Copyright 2018 Phillip Walters, All Rights Reserved.
+    HTML, CSS, and Javascript programmed by Phillip Walters.
+    Refactored 2025.
+  -->
+  <link rel="stylesheet" href="blocks.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Classic falling-block action</p>
+        <h1>Blocks</h1>
+        <p class="intro">
+          A retro cabinet falling-block puzzle game.
+        </p>
+      </div>
+
+      <div class="hero-notes">
+        <p>Click the score bar to begin, then settle in and play it like an old arcade machine.</p>
+      </div>
+    </header>
+
+    <section id="game-container" class="game-layout">
+      <aside id="sidebar" class="panel preview-panel" aria-label="Upcoming pieces">
+        <div class="panel-head">
+          <p class="panel-label">Queue</p>
+          <h2>Next Pieces</h2>
+        </div>
+
+        <div class="preview-stack">
+          <div class="preview-slot">
+            <table id="typeBoard1" class="preview-table"></table>
+          </div>
+          <div class="preview-slot">
+            <table id="typeBoard2" class="preview-table"></table>
+          </div>
+          <div class="preview-slot">
+            <table id="typeBoard3" class="preview-table"></table>
+          </div>
+          <div class="preview-slot">
+            <table id="typeBoard4" class="preview-table"></table>
+          </div>
+        </div>
+      </aside>
+
+      <section id="board-col" class="board-panel" aria-label="Game board">
+        <div class="board-frame">
+          <table id="board">
+            <caption id="caption">Click the score bar to start.</caption>
+          </table>
+        </div>
+
+        <p class="board-help">Tap <kbd>Space</kbd> to pause between drops.</p>
+      </section>
+
+      <aside id="controls-col" class="panel controls-panel" aria-label="Controls">
+        <div class="panel-head">
+          <p class="panel-label">Inputs</p>
+          <h2>Controls</h2>
+        </div>
+
+        <table class="controls-table">
+          <tr><td class="key">&#x2191;</td><td>Rotate</td></tr>
+          <tr><td class="key">&#x2193;</td><td>Soft drop</td></tr>
+          <tr><td class="key">&#x2190; &#x2192;</td><td>Move left / right</td></tr>
+          <tr><td class="key">Space</td><td>Pause</td></tr>
+          <tr><td class="key">Ctrl</td><td>Cycle piece (-50)</td></tr>
+        </table>
+
+        <p class="controls-note">The cheat key cycles to the next shape in order and costs 50 points.</p>
+      </aside>
+    </section>
+  </main>
+
+  <script src="blocks.js"></script>
+</body>
+</html>
